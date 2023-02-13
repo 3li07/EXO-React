@@ -45,9 +45,13 @@ function App() {
             <Presentation data={Presentations}/>
         </div>
         <hr className='mt-5'/>
-        <LigneListe titre="Diplome" donnees={Diploma}/>
-        <LigneListe titre="Experience" donnees={Experience}/>
-        <LigneListe titre="Competence" donnees={Competence}/>
+        <div className='row'>
+          <LigneListe titre="Diplome" donnees={Diploma}/>
+          <div className='col-md-1'></div>
+          <LigneListe titre="Experience" donnees={Experience}/>
+          <div className='col-md-1'></div>
+          <LigneListe titre="Competence" donnees={Competence}/>
+        </div>
       </div>
 
   );

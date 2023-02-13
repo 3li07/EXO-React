@@ -27,10 +27,11 @@ class LigneListe extends Component {
         data.forEach((dat) => {
             liste.push(<li key={dat}>{dat}</li>)
         })
-        return <div className="col-md-12">
+
+        return <div className="col-md-3">
         <div className="row">
             <div onClick={this.handleChange} style={{backgroundColor: "#7430f9"}} className="col-md-12">
-                {this.props.titre}
+                {this.props.titre} 
             </div>
             <div className="col-md-12">
                 <ul>
